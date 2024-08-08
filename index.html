@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+</head>
+<body class="grid-container">
+    
+    <header class="header">
+        <button id="btn-abrir-modal">Login</button>
+        <dialog id="modal">
+            <h2>Inicio_Sesion</h2>
+            <form method="dialog">
+                <label>Usuario <input type="email" placeholder="Correo Corporativo" required></label><br>
+                <label>Contraseña <input type="password" placeholder="Credencial" required></label><br>
+                <button type="submit">Enviar</button>
+            </form>
+            <button id="btn-cerrar-modal">cerrar modal</button>
+    
+        </dialog>
+    </header>
+<hr>
+    <article class="article">
+
+        <div class="contenedor">
+            <ul class="ul">
+                <li class="li activo">Pestaña1</li>
+                <li class="li">Pestaña2</li>
+                <li class="li">Pestaña3</li>
+            </ul>
+    
+            <div class="subcontenedor">
+                <div class="bloque activo">
+                    <table border="1">
+                        <tr>
+                            <th>Columna1</th>
+                            <th>Columna2</th>
+                            <th>Columna3</th>
+                            <th>Columna4</th>
+                        </tr>
+                        <tr>
+                            <td>Dato1</td>
+                            <td>Dato2</td>
+                            <td>Dato3</td>
+                            <td>Dato4</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="bloque">
+                    <div class="container">
+                        <div class="title">Registration</div>
+                        <form action="#">
+                            <div class="user-details">
+                                <div class="input-box">
+                                    <span class="user-details">Full name</span>
+                                    <input type="text" placeholder="enter your name" required>
+                                </div>
+                                <div class="input-box">
+                                    <span class="user-details">Username</span>
+                                    <input type="text" placeholder="enter your Username" required>
+                                </div>
+                                <div class="input-box">
+                                    <span class="user-details">Email</span>
+                                    <input type="text" placeholder="enter your email" required>
+                                </div>
+                                <div class="input-box">
+                                    <span class="user-details">Phone number</span>
+                                    <input type="text" placeholder="enter your hone number" required>
+                                </div>
+                                <div class="input-box">
+                                    <span class="user-details">Password</span>
+                                    <input type="text" placeholder="enter your password" required>
+                                </div>
+                                <div class="input-box">
+                                    <span class="user-details">Confirm password</span>
+                                    <input type="text" placeholder="confirm your password" required>
+                                </div>
+                            </div>
+                            <div class="gender-details">
+                                <input type="radio" name="gender" id="dot-1">
+                                <input type="radio" name="gender" id="dot-2">
+                                <input type="radio" name="gender" id="dot-3">
+                                <span class="gender-title">Gender</span>
+                                <div class="category">
+                                    <label for="dot-1">
+                                        <span class="dot one"></span>
+                                        <span class="gender">Male</span>
+                                    </label>
+                                    <label for="dot-2">
+                                        <span class="dot two"></span>
+                                        <span class="gender">Female</span>
+                                    </label>
+                                    <label for="dot-3">
+                                        <span class="dot three"></span>
+                                        <span class="gender">Prefer not to say</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="button">
+                                <input type="submit" value="Register">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="bloque">
+                    <div class="slider">
+
+                        <div class="slider--inner">
+                            <img src="img/IZQUIERDA.png">
+                            <img src="img/IMG1.png" >
+                            <img src="img/IMG2.png" >
+                            <img src="img/IMG3.png" >
+                            <img src="img/IMG4.png" >
+                            <img src="img/DERECHA.png">
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <aside class="sidebar">
+
+        <label for="IdNumber:">Requerimientos_TICs</label><br>
+        <input type="number" placeholder="IdNumber"><br>
+        <br>
+        <textarea name="Observacion" id="" cols="10" rows="10" placeholder="Escribir_Detalle"></textarea><br>
+        <input type="file"><br>
+        <input type="reset">
+        <input type="submit">
+
+    </aside>
+
+    <footer class="footer"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio ipsam iure ullam similique fuga reiciendis sint beatae corrupti iste alias qui inventore, maiores sapiente debitis sequi, minima magnam nulla! Culpa. </footer>
+    
+
+
+</body>
+</html>

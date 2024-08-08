@@ -1,0 +1,214 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{ height: 100%;}
+body{
+    min-height: 100%;
+    
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    background-color: rgb(218, 196, 165);
+    font-size: 1.2rem;
+}
+.grid-container>*{
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+.header{grid-area: header;}
+.article{ grid-area: article;}
+.sidebar{grid-area: sidebar;}
+.footer {grid-area: footer;}
+.grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+        "header"
+        "article"
+        "sidebar"
+        "footer";
+
+    grid-template: 
+        "header   header"  100px
+        "article  sidebar" auto
+        "footer   footer"  100px /
+        auto      200px ;    
+}
+
+
+
+button{
+    background-color: #916b5e;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: #ecdfcd;
+}
+#modal::backdrop {background-color: rgba(0,0,0, .55);}
+#modal{max-width: 50ch;}
+
+.contenedor{
+    width: 90%;
+    max-width: 120em;
+    background-color: #c2a88f;
+    padding: 1em;
+    border-radius: 10px;
+}
+.contenedor .ul{
+    min-width: 250px;
+    background-color: #8e6c49;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+}
+.contenedor .li{
+    background-color: #916b5e;
+    padding: 1em;
+    margin: 0 3em 0 0;
+    transition: all .5s ease;
+}
+.contenedor .li.activo{
+    background-color: #c2a88f;
+    color: whitesmoke;
+}
+.contenedor .subcontenedor{
+    min-height: 250px;
+    background-color: #8e6c49;
+    position: relative;
+    border-radius: 10px;
+}
+.contenedor .bloque{
+    background-color: #bab78c;
+    margin: 1em;
+    padding: 1em;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: all .5s ease;
+    border-radius: 10px;
+    min-height: 250px;
+    min-width: 250px;
+}
+.contenedor .bloque.activo{
+    opacity: 1;
+}
+
+table th{width: 10em;}
+table{ border-collapse: collapse;}
+tr:nth-of-type(1)>th{background-color: #be8c6b;}
+
+.container{
+    max-width: 95%;
+    width: 90%;
+    padding: 25px 30px;
+    background: #a4927a;
+    border-radius: 10px;
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 400;
+    position: relative;
+}
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: #686961;
+}
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .user-details .input-box{
+    margin-bottom: 25px;
+    width: calc(100%/2-20px);
+}
+.user-details .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all o.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: lightsalmon;
+}
+form .gender-details .gender-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+form .gender-details .category{
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+.gender-details .category label{
+    display: flex;
+    align-items: center;
+}
+.gender-details .category .dot{
+    height: 18px;
+    width: 18px;
+    background: #686961;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+ #dot-1:checked ~ .category label .one,
+ #dot-2:checked ~ .category label .two,
+ #dot-3:checked ~ .category label .three{
+    border-color: #d9d9d9;
+    background: yellow;
+}
+form input[type="radio"]{
+    display: none;
+}
+form .button{
+    height: 45px;
+    margin: 45px 0;
+}
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #686961;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #be8c6b , #ecdfcd);
+}
+form .button input:hover{
+    background: linear-gradient(-135deg, #be8c6b , #ecdfcd);
+}
+
+.slider{overflow: hidden;}
+.slider--inner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+img{width: 100%;}
